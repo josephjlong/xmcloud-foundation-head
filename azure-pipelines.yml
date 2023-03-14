@@ -13,8 +13,9 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: Install Sitecore CLI
   inputs:
-    command: 'custom'
-    custom: 'tool restore'
+    command: custom
+    custom: tool
+    arguments: restore
 - task: DotNetCoreCLI@2
   displayName: Initialise CLI Plugins
   inputs:
