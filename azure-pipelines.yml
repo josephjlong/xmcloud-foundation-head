@@ -26,5 +26,5 @@ steps:
   displayName: Authenticate with XM-C Deploy Application
   inputs:
     command: 'custom'
-    custom: 'sitecore cloud login'
-    arguments: '--client-credentials --client-id $(XM_CLOUD_CLIENT_ID) --client-secret $(XM_CLOUD_CLIENT_SECRET) --allow-write'
+    custom: 'sitecore'
+    arguments: 'cloud login --client-credentials --client-id $(XM_CLOUD_CLIENT_ID) --client-secret $(XM_CLOUD_CLIENT_SECRET) --allow-write'
