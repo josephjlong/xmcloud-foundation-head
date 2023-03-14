@@ -28,3 +28,9 @@ steps:
     command: 'custom'
     custom: 'sitecore'
     arguments: 'cloud login --client-credentials --client-id $(XM_CLOUD_CLIENT_ID) --client-secret $(XM_CLOUD_CLIENT_SECRET) --allow-write'
+- task: DotNetCoreCLI@2
+  displayName: Deploy site assets to XMC
+  inputs:
+    command: 'custom'
+    custom: 'sitecore'
+    arguments: 'cloud deployment create --environment-id $(XM_CLOUD_ENVIRONMENT_ID) --upload --json'
