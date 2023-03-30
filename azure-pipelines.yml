@@ -33,4 +33,4 @@ steps:
   inputs:
     command: 'custom'
     custom: 'sitecore'
-    arguments: 'cloud deployment create --environment-id $(XM_CLOUD_ENVIRONMENT_ID) --upload --json'
+    arguments: 'cloud deployment create -id $(XM_CLOUD_ENVIRONMENT_ID) --upload --json'
